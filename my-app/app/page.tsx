@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black">
       <header className="flex items-center justify-between p-4">
-        <h1 className="text-white text-xl font-semibold">CS2 Skins Futures</h1>
+        <h1 className="text-white text-xl font-semibold">CS2 Skin Betting</h1>
         
         <div className="flex items-center gap-4">
          {/* Search Bar */}
@@ -32,7 +34,14 @@ export default function Home() {
           </select>
 
           {/* Login Button */}
-          <button className="bg-green-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/25">
+          <button className="bg-green-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/25 flex items-center gap-2">
+            <Image 
+              src="/steam-logo.svg" 
+              alt="Login icon" 
+              width={16} 
+              height={16}
+              className="filter brightness-0"
+            />
             Login
           </button>
         </div>
